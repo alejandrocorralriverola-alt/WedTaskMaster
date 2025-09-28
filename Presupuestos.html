@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presupuestos - WedTaskMaster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        function validarFormulario(event) {
+            const nombre = document.getElementById('nombre').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const mensaje = document.getElementById('mensaje').value.trim();
+            const politica = document.getElementById('politica').checked;
+
+            if (!nombre || !email || !mensaje) {
+                alert("Por favor, rellena todos los campos.");
+                event.preventDefault();
+                return false;
+            }
+            if (!politica) {
+                alert("Debes aceptar la Política de privacidad para enviar el formulario.");
+                event.preventDefault();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="header-superior">
+        <img src="img/logo_empresa_header.png" alt="WedTaskMaster" class="logo-empresa-header" />
+        <h1>WedTaskMaster</h1>
+    </div>
+    <nav class="nav-principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="planeswtm.html">Planes WTM</a></li>
+            <li><a href="presupuestos.html" class="active">Presupuestos</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contacto.html">Encuéntranos aquí</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="presupuestos">
+        <h2>Escríbenos tu mensaje</h2>
+        <form onsubmit="validarFormulario(event)">
+            <!-- Nombre -->
+            <div class="buzon-cajetin">
+                <label for="nombre" class="buzon-titulo">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" />
+            </div>
+
+            <!-- Email -->
+            <div class="buzon-cajetin">
+                <label for="email" class="buzon-titulo">Email:</label>
+                <input type="email" id="email" name="email" />
+            </div>
+
+            <!-- Mensaje -->
+            <div class="buzon-cajetin">
+                <label for="mensaje" class="buzon-titulo">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+            </div>
+
+            <!-- Política de privacidad -->
+            <div class="buzon-cajetin">
+                <input type="checkbox" id="politica" name="politica" />
+                <label for="politica">He leído y acepto la <a href="contacto.html">Política de privacidad</a></label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>
+        <a href="contacto.html" class="footer-enlace">Dirección de la empresa</a> | Aviso legal
+    </p>
+    <p class="redes-footer">
+        <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="img/pinterest.png" alt="Pinterest" /></a>
+        <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
+    </p>
+    <div class="footer-logo">
+        <img src="img/logo_empresa_footer.png" alt="WedTaskMaster Footer" />
+    </div>
+</footer>
+
+</body>
+</html>
