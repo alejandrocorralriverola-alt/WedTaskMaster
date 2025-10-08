@@ -11,7 +11,7 @@
 
 <header>
     <div class="header-superior">
-        <img src="img/logo_empresa_header.png" alt="WedTaskMaster" class="logo-empresa-header" />
+        <img src="img/logo_empresa_header.png" alt="WedTaskMaster" class="logo-empresa-header" width="60" height="60"/>
         <h1>WedTaskMaster</h1>
     </div>
     <nav class="nav-principal">
@@ -32,54 +32,25 @@
             <!-- Nombre -->
             <div class="buzon-cajetin">
                 <label for="nombre" class="buzon-titulo">Nombre:</label>
-                <input 
-                    type="text" 
-                    id="nombre" 
-                    name="nombre" 
-                    required 
-                    pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,40}$" 
-                    title="Introduce un nombre válido (solo letras y espacios, entre 2 y 40 caracteres)"
-                />
+                <input type="text" id="nombre" name="nombre" pattern=".{2,}" title="Introduce al menos 2 caracteres" required />
             </div>
 
             <!-- Email -->
             <div class="buzon-cajetin">
                 <label for="email" class="buzon-titulo">Email:</label>
-                <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    required 
-                    title="Introduce una dirección de correo válida"
-                />
+                <input type="email" id="email" name="email" required />
             </div>
 
             <!-- Mensaje -->
             <div class="buzon-cajetin">
                 <label for="mensaje" class="buzon-titulo">Mensaje:</label>
-                <textarea 
-                    id="mensaje" 
-                    name="mensaje" 
-                    rows="5" 
-                    required 
-                    minlength="10" 
-                    maxlength="500" 
-                    title="El mensaje debe tener entre 10 y 500 caracteres"
-                ></textarea>
+                <textarea id="mensaje" name="mensaje" rows="5" pattern=".{10,}" title="Escribe al menos 10 caracteres" required></textarea>
             </div>
 
             <!-- Política de privacidad -->
             <div class="buzon-cajetin">
-                <input 
-                    type="checkbox" 
-                    id="politica" 
-                    name="politica" 
-                    required 
-                    title="Debes aceptar la política de privacidad para continuar"
-                />
-                <label for="politica">
-                    He leído y acepto la <a href="contacto.html">Política de privacidad</a>
-                </label>
+                <input type="checkbox" id="politica" name="politica" required />
+                <label for="politica">He leído y acepto la <a href="contacto.html">Política de privacidad</a></label>
             </div>
 
             <button type="submit">Enviar</button>
@@ -92,12 +63,12 @@
         <a href="contacto.html" class="footer-enlace">Dirección de la empresa</a> | Aviso legal
     </p>
     <p class="redes-footer">
-        <a href="#"><img src="img/instagram.png" alt="Instagram" /></a>
-        <a href="#"><img src="img/pinterest.png" alt="Pinterest" /></a>
-        <a href="#"><img src="img/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="img/instagram.png" alt="Instagram" width="40" height="40"/></a>
+        <a href="#"><img src="img/pinterest.png" alt="Pinterest" width="40" height="40"/></a>
+        <a href="#"><img src="img/facebook.png" alt="Facebook" width="40" height="40"/></a>
     </p>
     <div class="footer-logo">
-        <img src="img/logo_empresa_footer.png" alt="WedTaskMaster Footer" />
+        <img src="img/logo_empresa_footer.png" alt="WedTaskMaster Footer" width="60" height="60"/>
     </div>
 </footer>
 

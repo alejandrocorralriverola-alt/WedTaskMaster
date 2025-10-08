@@ -1,10 +1,8 @@
-/* Fuente personalizada para título */
 @font-face {
     font-family: 'NewYorker';
     src: url('fonts/NewYork.otf') format('opentype');
 }
 
-/* Estilos generales */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -13,7 +11,6 @@ body {
     color: #333;
 }
 
-/* Cabecera */
 header {
     padding: 20px;
     background: #ffffff;
@@ -35,10 +32,10 @@ header h1 {
 }
 
 .logo-empresa-header {
-    max-height: 60px;
+    width: auto;
+    height: 60px;
 }
 
-/* Navegación */
 .nav-principal ul {
     list-style: none;
     padding: 0;
@@ -59,7 +56,6 @@ header h1 {
     color: #e6007e;
 }
 
-/* Secciones generales */
 main section {
     padding: 40px 20px;
     max-width: 1200px;
@@ -67,13 +63,11 @@ main section {
     text-align: center;
 }
 
-/* Texto destacado general */
 .texto-destacado {
     font-weight: bold;
     color: #e6007e;
 }
 
-/* Recuadro gris destacado en Index */
 #seccion1 {
     background-color: #f8f8f8;
     padding: 40px 20px;
@@ -81,7 +75,6 @@ main section {
     margin-bottom: 30px;
 }
 
-/* Imágenes destacadas en Index */
 .imagenes-destacadas {
     display: flex;
     justify-content: center;
@@ -90,12 +83,10 @@ main section {
 }
 
 .imagenes-destacadas img {
-    width: 32%;
-    border-radius: 10px;
-    object-fit: cover;
+    width: auto;
+    height: 500px;
 }
 
-/* Servicios generales */
 .servicios {
     display: flex;
     flex-wrap: wrap;
@@ -115,26 +106,22 @@ main section {
     flex-direction: column;
 }
 
-/* Títulos de servicios */
 .servicio h3 {
     color: #e6007e;
     margin-bottom: 10px;
 }
 
-/* Iconos de planes WTM */
 .servicio img.icono-plan {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: block;
     margin: 0 auto 10px;
 }
 
-/* Textos dentro de servicios */
 .servicio p {
     margin: 10px 0;
 }
 
-/* Precios de los planes */
 .servicio .precio {
     font-size: 24px;
     font-weight: bold;
@@ -142,7 +129,6 @@ main section {
     flex-shrink: 0;
 }
 
-/* Botones generales */
 .servicio button,
 #presupuestos button {
     margin-top: auto;
@@ -163,7 +149,6 @@ main section {
     background: #cc006d;
 }
 
-/* Colaboradores Index */
 .colaboradores {
     display: flex;
     flex-wrap: wrap;
@@ -176,18 +161,21 @@ main section {
     text-align: center;
 }
 
+.colaboradores .logo img {
+    width: auto;
+    height: 120px;
+}
+
 .colaborador-nombre {
     margin-top: 5px;
 }
 
-/* Colores de colaboradores */
 .colaborador1 { color: #9b5e6a; }
 .colaborador2 { color: #000000; }
 .colaborador3 { color: #f9cedb; }
 .colaborador4 { color: #c5e1c3; }
 .colaborador5 { color: #ffc42b; }
 
-/* Sección Presupuestos */
 #presupuestos {
     max-width: 600px;
     margin: 0 auto;
@@ -215,7 +203,6 @@ main section {
     margin-bottom: 5px;
 }
 
-/* Contacto */
 .ficha-contacto {
     display: flex;
     flex-wrap: wrap;
@@ -246,15 +233,16 @@ main section {
     flex-shrink: 0;
 }
 
-/* Mapas de contacto */
 .mapa-empresa img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(44,62,80,0.1);
     margin-top: 30px;
+    display: block;
 }
 
-/* Galería portfolio */
 .galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -263,13 +251,13 @@ main section {
 }
 
 .galeria img {
-    width: 100%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
     border-radius: 10px;
-    object-fit: cover;
     box-shadow: 0 4px 6px rgba(44,62,80,0.1);
 }
 
-/* Footer */
 footer {
     background: #2c3e50;
     color: white;
@@ -282,19 +270,20 @@ footer {
 }
 
 .redes-footer img {
-    width: 30px;
+    width: 40px;
+    height: 40px;
     margin: 0 10px;
 }
 
 .footer-logo img {
-    width: 80px;
+    width: auto;
+    height: 60px;
     margin-top: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Enlace footer */
 footer a.footer-enlace,
 footer a.footer-enlace:link,
 footer a.footer-enlace:visited {
